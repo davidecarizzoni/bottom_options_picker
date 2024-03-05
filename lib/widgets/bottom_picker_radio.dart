@@ -42,12 +42,7 @@ class _BottomPickerRadioState extends State<BottomPickerRadio> {
     return Container(
       width: double.infinity,
       color: Colors.white,
-      height: double.infinity,
-      padding: const EdgeInsets.only(
-        left: 10,
-        top: 10,
-        right: 10,
-      ),
+      padding: const EdgeInsets.all(15),
       child: SingleChildScrollView(
         child: Column(
           children: [

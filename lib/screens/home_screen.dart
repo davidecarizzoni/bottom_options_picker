@@ -102,7 +102,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: const Text('Your gender'),
                 trailing: Text(
                   gender != null
-                      ? genderOptions.firstWhere((e) => e.value == gender).label
+                      ? genderOptions
+                          .firstWhere(
+                            (e) => e.value == gender,
+                          )
+                          .label
                       : ' - ',
                   style: const TextStyle(fontSize: 16),
                 ),

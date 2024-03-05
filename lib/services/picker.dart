@@ -30,11 +30,8 @@ Future openRadioPicker({
 }) async {
   var selectedGender = await showModalBottomSheet<String>(
     context: context,
-    isDismissible: true,
     barrierColor: Colors.black.withOpacity(0.3),
-    constraints: const BoxConstraints(
-      maxHeight: 350,
-    ),
+    isScrollControlled: true,
     builder: (BuildContext context) {
       return BottomPickerRadio(
         title: 'Select your gender',
