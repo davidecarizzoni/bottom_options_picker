@@ -15,14 +15,17 @@ List<ListItem> genderOptions = [
   ListItem(
     value: 'M',
     label: 'Male',
+    text: 'Male description',
   ),
   ListItem(
     value: 'F',
     label: 'Female',
+    text: 'Female description',
   ),
   ListItem(
     value: 'O',
     label: 'Other',
+    text: 'Other description',
   ),
 ];
 

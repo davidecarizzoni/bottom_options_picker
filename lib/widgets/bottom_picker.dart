@@ -24,11 +24,7 @@ class BottomPicker extends StatelessWidget {
         Container(
           width: double.infinity,
           color: Colors.white,
-          padding: const EdgeInsets.only(
-            left: 10,
-            top: 10,
-            right: 10,
-          ),
+          padding: const EdgeInsets.all(10),
           child: Text(
             title ?? '',
             style: const TextStyle(
@@ -41,9 +37,10 @@ class BottomPicker extends StatelessWidget {
         ),
         SizedBox(
           width: double.infinity,
-          height: 350,
+          height: 300,
           child: CupertinoPicker(
             backgroundColor: Colors.white,
+            magnification: 1.25,
             itemExtent: 40,
             scrollController: FixedExtentScrollController(
               initialItem: options.indexOf(

@@ -71,7 +71,6 @@ class _BottomPickerRadioState extends State<BottomPickerRadio> {
                 children: [
                   ...widget.options.map(
                     (option) => ListTile(
-                      enableFeedback: true,
                       onTap: () => _onChanged(option.value, context),
                       title: Text(option.label),
                       subtitle:
